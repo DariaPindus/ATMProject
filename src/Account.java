@@ -6,7 +6,15 @@ public class Account {
         this.amount = value;
     }
 
-    public void showMoneyOnAccount(){
+    public float getAmount(){
+        return this.amount;
+    }
+
+    public void WithdrawMoney(float amountToWithdraw){
+        amount-=amountToWithdraw;
+    }
+
+    public void ShowMoneyOnAccount(){
         //ИЗМЕНИТЬ ДЛЯ ГУИ
         System.out.println("HRN: " + amount + "\nUSD: " + Money.CalculateInUSD(amount) + "\nEuro: " + Money.CalculateInEuro(amount));
     }

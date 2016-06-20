@@ -55,4 +55,8 @@ public class Card {
     public void setCurrAccount(float value){
         currAccount = new Account(value);
     }
+
+    public Account getCurrAccount(){
+        return currAccount;
+    }
 }

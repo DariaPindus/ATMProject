@@ -3,11 +3,12 @@ import java.util.GregorianCalendar;
 public class Person {
     private String name;
     private Card personCard;
-    GregorianCalendar expireDate;
+    //GregorianCalendar expireDate;
 
-    public Person(String name, GregorianCalendar expireDate){
+    //???лучше сделать тут билдер??
+    public Person(String name){
         this.name = name;
-        this.expireDate = expireDate;
+        //this.expireDate = expireDate;
     }
 
     public void setCard(String CardID, Card.Type type, float initAmount, String password){
